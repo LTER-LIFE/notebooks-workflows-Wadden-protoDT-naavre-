@@ -462,11 +462,11 @@
           "height": 152
         }
       },
-      "409a5f79-4b07-475b-ad59-0fa597d938d5": {
-        "id": "409a5f79-4b07-475b-ad59-0fa597d938d5",
+      "225f55fb-0535-4ec5-93ec-7f8f9ac4b1ed": {
+        "id": "225f55fb-0535-4ec5-93ec-7f8f9ac4b1ed",
         "position": {
-          "x": 1456.8561872909695,
-          "y": 91.09253065774799
+          "x": 1447.9375696766997,
+          "y": 88.86287625418063
         },
         "orientation": 0,
         "type": "workflow-cell",
@@ -537,14 +537,9 @@
             "confs": [],
             "params": [
               {
-                "name": "param_s3_public_bucket",
-                "type": "str",
-                "default_value": null
-              },
-              {
                 "name": "param_s3_server",
                 "type": "str",
-                "default_value": null
+                "default_value": "scruffy.lab.uvalight.net:9000"
               }
             ],
             "secrets": [
@@ -560,10 +555,10 @@
             "title": "rs-insitu-comp-koen-greuell-lifewatch-eu",
             "description": "rs-insitu-comp-koen-greuell-lifewatch-eu",
             "created": "2025-09-08T08:19:04.688922Z",
-            "modified": "2025-09-17T07:45:49.183679Z",
-            "container_image": "ghcr.io/naavre/cells-vl-waddenzee-proto-dt/rs-insitu-comp-koen-greuell-lifewatch-eu:f263217",
+            "modified": "2025-09-17T07:56:40.889412Z",
+            "container_image": "ghcr.io/naavre/cells-vl-waddenzee-proto-dt/rs-insitu-comp-koen-greuell-lifewatch-eu:7841381",
             "kernel": "IRkernel",
-            "source_url": "https://github.com/NaaVRE/cells-vl-waddenzee-proto-dt/tree/4d4dfdfdd73eb8b36e1b4191254edeac302635d3/rs-insitu-comp-koen-greuell-lifewatch-eu"
+            "source_url": "https://github.com/NaaVRE/cells-vl-waddenzee-proto-dt/tree/65c965de5adc89ed0482ddbf7eac38fa3899e7f4/rs-insitu-comp-koen-greuell-lifewatch-eu"
           }
         },
         "size": {
@@ -606,21 +601,21 @@
           "portId": "splitter_source"
         }
       },
-      "65f5efb6-5148-4a4c-a3c5-7b7cad75c073": {
-        "id": "65f5efb6-5148-4a4c-a3c5-7b7cad75c073",
+      "4114b8b3-dec2-4361-87d1-b41231477547": {
+        "id": "4114b8b3-dec2-4361-87d1-b41231477547",
         "from": {
           "nodeId": "19ac862c-c879-4a66-aba6-6fc43d900182",
           "portId": "merger_target"
         },
         "to": {
-          "nodeId": "409a5f79-4b07-475b-ad59-0fa597d938d5",
+          "nodeId": "225f55fb-0535-4ec5-93ec-7f8f9ac4b1ed",
           "portId": "acolite_processing"
         }
       },
-      "04987014-1311-4361-b0f7-05259e079c5f": {
-        "id": "04987014-1311-4361-b0f7-05259e079c5f",
+      "631ed429-be99-48a1-a0ce-5ebd7b7b235f": {
+        "id": "631ed429-be99-48a1-a0ce-5ebd7b7b235f",
         "from": {
-          "nodeId": "409a5f79-4b07-475b-ad59-0fa597d938d5",
+          "nodeId": "225f55fb-0535-4ec5-93ec-7f8f9ac4b1ed",
           "portId": "dummy_output"
         },
         "to": {
