@@ -346,99 +346,6 @@
           "height": 152
         }
       },
-      "124e6462-bf33-43e2-a626-f645e5222ae1": {
-        "id": "124e6462-bf33-43e2-a626-f645e5222ae1",
-        "position": {
-          "x": 1466.6295012236983,
-          "y": 93.32218506131537
-        },
-        "orientation": 0,
-        "type": "workflow-cell",
-        "ports": {
-          "acolite_processing": {
-            "id": "acolite_processing",
-            "type": "left",
-            "properties": {
-              "color": "#87bdc5",
-              "parentNodeType": "workflow-cell"
-            },
-            "position": {
-              "x": 53,
-              "y": 75
-            }
-          },
-          "dummy_output": {
-            "id": "dummy_output",
-            "type": "right",
-            "properties": {
-              "color": "#2d863d",
-              "parentNodeType": "workflow-cell"
-            },
-            "position": {
-              "x": 202,
-              "y": 75
-            }
-          }
-        },
-        "properties": {
-          "cell": {
-            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/b35e32f6-5363-448c-a801-f6bf694083a5/",
-            "owner": "koen.greuell@lifewatch.eu",
-            "virtual_lab": "waddenzee-proto-dt",
-            "base_container_image": {
-              "build": "ghcr.io/naavre/flavors/naavre-fl-lter-life-wadden-cell-build:v0.0.25",
-              "runtime": "ghcr.io/naavre/flavors/naavre-fl-lter-life-wadden-cell-runtime:v0.0.25"
-            },
-            "dependencies": [],
-            "inputs": [
-              {
-                "name": "acolite_processing",
-                "type": "list"
-              }
-            ],
-            "outputs": [
-              {
-                "name": "dummy_output",
-                "type": "str"
-              }
-            ],
-            "confs": [],
-            "params": [
-              {
-                "name": "param_s3_public_bucket",
-                "type": "str",
-                "default_value": null
-              },
-              {
-                "name": "param_s3_server",
-                "type": "str",
-                "default_value": null
-              }
-            ],
-            "secrets": [
-              {
-                "name": "secret_s3_access_key",
-                "type": "str"
-              },
-              {
-                "name": "secret_s3_secret_key",
-                "type": "str"
-              }
-            ],
-            "title": "rs-insitu-comp-koen-greuell-lifewatch-eu",
-            "description": "rs-insitu-comp-koen-greuell-lifewatch-eu",
-            "created": "2025-09-08T08:19:04.688922Z",
-            "modified": "2025-09-12T09:31:31.323283Z",
-            "container_image": "ghcr.io/naavre/cells-vl-waddenzee-proto-dt/rs-insitu-comp-koen-greuell-lifewatch-eu:a8e44f0",
-            "kernel": "IRkernel",
-            "source_url": "https://github.com/NaaVRE/cells-vl-waddenzee-proto-dt/tree/21252a4303980c36d5a9fc4f16e55c03c93c94d2/rs-insitu-comp-koen-greuell-lifewatch-eu"
-          }
-        },
-        "size": {
-          "width": 252,
-          "height": 152
-        }
-      },
       "1b0d6d22-c94d-4b04-ae63-5b91e63e8a23": {
         "id": "1b0d6d22-c94d-4b04-ae63-5b91e63e8a23",
         "position": {
@@ -554,6 +461,110 @@
           "width": 252,
           "height": 152
         }
+      },
+      "225f55fb-0535-4ec5-93ec-7f8f9ac4b1ed": {
+        "id": "225f55fb-0535-4ec5-93ec-7f8f9ac4b1ed",
+        "position": {
+          "x": 1447.9375696766997,
+          "y": 88.86287625418063
+        },
+        "orientation": 0,
+        "type": "workflow-cell",
+        "ports": {
+          "acolite_processing": {
+            "id": "acolite_processing",
+            "type": "left",
+            "properties": {
+              "color": "#87bdc5",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 53,
+              "y": 75
+            }
+          },
+          "dummy_output": {
+            "id": "dummy_output",
+            "type": "right",
+            "properties": {
+              "color": "#2d863d",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 202,
+              "y": 75
+            }
+          }
+        },
+        "properties": {
+          "cell": {
+            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/b35e32f6-5363-448c-a801-f6bf694083a5/",
+            "owner": "koen.greuell@lifewatch.eu",
+            "virtual_lab": "waddenzee-proto-dt",
+            "base_container_image": {
+              "build": "ghcr.io/naavre/flavors/naavre-fl-lter-life-wadden-cell-build:v0.0.25",
+              "runtime": "ghcr.io/naavre/flavors/naavre-fl-lter-life-wadden-cell-runtime:v0.0.25"
+            },
+            "dependencies": [
+              {
+                "name": "devtools",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "aws.s3",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "ncdf4",
+                "module": "",
+                "asname": null
+              }
+            ],
+            "inputs": [
+              {
+                "name": "acolite_processing",
+                "type": "list"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "dummy_output",
+                "type": "str"
+              }
+            ],
+            "confs": [],
+            "params": [
+              {
+                "name": "param_s3_server",
+                "type": "str",
+                "default_value": "scruffy.lab.uvalight.net:9000"
+              }
+            ],
+            "secrets": [
+              {
+                "name": "secret_s3_access_key",
+                "type": "str"
+              },
+              {
+                "name": "secret_s3_secret_key",
+                "type": "str"
+              }
+            ],
+            "title": "rs-insitu-comp-koen-greuell-lifewatch-eu",
+            "description": "rs-insitu-comp-koen-greuell-lifewatch-eu",
+            "created": "2025-09-08T08:19:04.688922Z",
+            "modified": "2025-09-17T07:56:40.889412Z",
+            "container_image": "ghcr.io/naavre/cells-vl-waddenzee-proto-dt/rs-insitu-comp-koen-greuell-lifewatch-eu:7841381",
+            "kernel": "IRkernel",
+            "source_url": "https://github.com/NaaVRE/cells-vl-waddenzee-proto-dt/tree/65c965de5adc89ed0482ddbf7eac38fa3899e7f4/rs-insitu-comp-koen-greuell-lifewatch-eu"
+          }
+        },
+        "size": {
+          "width": 252,
+          "height": 152
+        }
       }
     },
     "links": {
@@ -579,28 +590,6 @@
           "portId": "merger_source"
         }
       },
-      "401b8155-6e1f-4efb-9b5b-47ccb735a204": {
-        "id": "401b8155-6e1f-4efb-9b5b-47ccb735a204",
-        "from": {
-          "nodeId": "19ac862c-c879-4a66-aba6-6fc43d900182",
-          "portId": "merger_target"
-        },
-        "to": {
-          "nodeId": "124e6462-bf33-43e2-a626-f645e5222ae1",
-          "portId": "acolite_processing"
-        }
-      },
-      "86cca675-de2f-45ae-9214-b98a2e210d02": {
-        "id": "86cca675-de2f-45ae-9214-b98a2e210d02",
-        "from": {
-          "nodeId": "124e6462-bf33-43e2-a626-f645e5222ae1",
-          "portId": "dummy_output"
-        },
-        "to": {
-          "nodeId": "06952b41-938c-4166-b9b4-585bcd2acb4a",
-          "portId": "dummy_output"
-        }
-      },
       "678b5578-51f4-4b64-a07e-65c7135c3f7d": {
         "id": "678b5578-51f4-4b64-a07e-65c7135c3f7d",
         "from": {
@@ -610,6 +599,28 @@
         "to": {
           "nodeId": "244c1777-1927-461a-9b3f-958fc46d8e22",
           "portId": "splitter_source"
+        }
+      },
+      "4114b8b3-dec2-4361-87d1-b41231477547": {
+        "id": "4114b8b3-dec2-4361-87d1-b41231477547",
+        "from": {
+          "nodeId": "19ac862c-c879-4a66-aba6-6fc43d900182",
+          "portId": "merger_target"
+        },
+        "to": {
+          "nodeId": "225f55fb-0535-4ec5-93ec-7f8f9ac4b1ed",
+          "portId": "acolite_processing"
+        }
+      },
+      "631ed429-be99-48a1-a0ce-5ebd7b7b235f": {
+        "id": "631ed429-be99-48a1-a0ce-5ebd7b7b235f",
+        "from": {
+          "nodeId": "225f55fb-0535-4ec5-93ec-7f8f9ac4b1ed",
+          "portId": "dummy_output"
+        },
+        "to": {
+          "nodeId": "06952b41-938c-4166-b9b4-585bcd2acb4a",
+          "portId": "dummy_output"
         }
       }
     },
