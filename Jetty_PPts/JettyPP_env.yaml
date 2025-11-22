@@ -1,0 +1,23 @@
+name: JettyPP_env
+channels:
+  - conda-forge
+  - r
+dependencies:
+  - r-irkernel # for construct the kernel in Naavre
+  - r-plotly
+  - r-mgcv
+  - r-ggplot2
+  - r-lubridate
+  - r-dplyr
+  - r-pracma
+  - r-zoo
+  - r-patchwork
+  - r-gridextra
+
+## This yaml file is to set up your own R kernel. Go to the terminal and run the following commands
+# cd "/home/jovyan/Virtual Labs/Waddenzee proto DT/Git public/Jetty_PPts"
+# conda env create -f "JettyPP_env.yaml"
+# source /opt/conda/etc/profile.d/conda.sh
+# conda activate JettyPP_env
+
+## now refresh your kernels, you should be able to see a new kernal named "JettyPP_env", select it and you should be able to run the R notebook.
