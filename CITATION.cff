@@ -18,6 +18,10 @@ authors:
     email: stanley.nmor@nioz.nl
     affiliation: Royal Netherlands Institute for Sea Research
     orcid: 'https://orcid.org/0000-0002-3918-1422'
+  - given-names: Koen
+    family-names: Greuell
+    email: koen.greuell@lifewatch.eu
+    orcid: 'https://orcid.org/0009-0008-7137-5877'
 identifiers:
   - type: doi
     value: 10.5281/zenodo.17256579
